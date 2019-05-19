@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+div .header{
+    padding-top:10px ;
+    font-family: "B Nazanin";
+
+    text-align: center;
+    width: 100%;
+    background: #072652;
+    border-bottom: 3px solid black;
+}
+.header h1{
+    font-size: 30px;
+    color: white;
+}
+body {
+
+    background: url("../img/doc3.jpg") no-repeat fixed center  ;
+}
+
+div #nobat-label{
+    background: white;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 10px;
+    font-size: 300px;
+    border:2px solid  black;
+    color: #072652;
+}
+#nobat-num{
+    font-size: 80px;
+    float: right;
+    margin-top: 170px;
+    margin-right: 50px;
+    color: #072652;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 3px gray;
+    border-left: none;
+}
+.foooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  #072652;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: "B Nazanin";
+}
+
+.analog-clock{
+    width:140px;
+    height:140px;
+    float: left;
+}
+
+#clock-face{
+    stroke:black;
+    stroke-width:2px;
+    fill:white;
+}
+
+#h-hand, #m-hand, #s-hand, #s-tail{
+    stroke:black;
+    stroke-linecap:round;
+}
+
+#h-hand{
+    stroke-width:3px;
+}
+
+#m-hand{
+    stroke-width:2px;
+}
+
+#s-hand{
+    stroke-width:1px;
+}
+
+.time-text{
+    text-align:center;
+}
+#rooms{
+
+}
+#rooms .room{
+    border: solid 1px #072652;
+    border-radius: 15px;
+    margin:  0 auto;
+    width: 33%;
+    background-color: aliceblue;
+    font-family: "B Titr" !important;
+    text-align: center;
+}
+
+.room .roomHead{
+    height: 60px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+    background-color: #ffffff;
+    font-size: 60px;
+}
+.room .roomNumber{
+    height: 400px;width: 400px;
+    margin:   0 auto;
+    border-radius: 50%;
+    border: solid 3px #ff577b ;
+    background: #ffffff;
+}
+.room .roomNumber h1{
+    padding: 0;
+}

@@ -1,0 +1,424 @@
+@font-face {
+    font-family: irs;
+    src: url('../assets/fonts/IRAN_SANS.TTF');
+    
+
+}
+@font-face {
+    font-family: irsb;
+    src: url('../assets/fonts/IRANSANS-B.TTF');
+}
+@font-face {
+    font-family: faNum;
+    src: url('../assets/fonts/IRANSansWeb(FaNum)_Bold.ttf');
+
+
+}
+.faNumber{
+    font-family: faNum;
+}
+
+ h1,h2, h3, h5, h5, h6{
+    margin: 0;
+    font-family: irsb
+}
+ body {
+    font-family: irs;
+    direction: rtl;
+    text-align: right;
+    color: rgb(14, 13, 13)
+    
+}
+.bg{
+    background:whitesmoke;
+    height:100vh;
+    overflow: hidden;
+}
+.box{
+    
+   background: white;
+   background-image: url('../assets/76.jpg');
+  
+    background-size: contain;
+    background-attachment: fixed;
+
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.nav{
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #545b62;;
+    border-bottom: 1px solid gainsboro;
+}
+
+.nav .userBox i{
+   
+    font-size: 38px;
+    /* height: 40px;
+    border-radius: 50%;
+    border: 1px solid dodgerblue;
+    box-shadow: 0 0 3px rgba(17, 19, 92, 0.493); */
+}
+.nav .userBox {
+    display: flex ;
+     align-items: center;
+}
+.nav .userBox .userInfo{
+    display: inline-flex ;
+     flex-direction:column;
+     padding: 0 15px;
+}
+.nav .userBox h5{
+    display: inline-block;
+    font-size: 12px;
+    
+}
+
+.shiftsBox {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+.shiftsBox button {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background: #007bff;
+    /* background-image: linear-gradient(to right , #310ece, #007bff ); */
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    padding: 8px 15px ;
+    border-radius: 60px;
+    font-size: 18px;
+    border: none;
+    box-shadow: -2px 5px 21px rgba(17, 19, 92, 0.293);
+    margin-top: 30px ;
+}
+
+.shiftsBox button i{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#0356af;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+}
+.endShift{
+    cursor: pointer;
+
+    /* background:linear-gradient(to right ,#ff6f09, #dc3545 ) #dc3545!important; */
+    background:rebeccapurple!important;
+}
+.endShift i{
+    background: rgb(71, 35, 107)!important;
+}
+
+.reCallShift{
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    width: 50%;
+    background: rgb(2, 101, 201);
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    padding: 8px 15px ;
+    border-radius: 60px;
+    font-size: 18px;
+    border: none;
+    box-shadow: -2px 5px 21px rgba(17, 19, 92, 0.293);
+    margin-top: 30px ;
+}
+
+.reCallShift i{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#004085;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+}
+.alert{
+    margin-top: 40px;
+    width: 50%;
+    text-align: center;
+}
+.form-group{
+    width: 47%;
+}
+
+/*****************************************/
+/******************************************/
+/*******************************************/
+.header h4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(68, 66, 66)
+}
+.header h2{
+    direction: ltr;
+    font-size: 28px;
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,  #007bff , #17a2b8);
+    color: white;
+    border-radius: 0 60px 60px 0;
+    position: absolute;
+    left: -15px;
+}
+.header h2 i{
+    padding: 0 10px;
+}
+.body{
+   
+
+}
+.rightBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.rightBox .nobat-box{
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: white;
+    background-image: linear-gradient(to right, #007bff , #17a2b8);
+    box-shadow: 0 0 5px rgba(27, 30, 207, 0.493);
+}
+.nobat-box .info{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px
+   
+}
+.nobat-box .info .doctor{
+    background: #ffffff3a;
+    border-radius: 60px;
+    padding: 1px 15px;
+   display: flex;
+   align-items: center;
+}
+.nobat-box .info i{
+    font-size: 26px;
+    padding-left:5px
+}
+.nobat-box .info small{
+    padding: 0px 15px;
+   
+}
+.nobat-box .info .number{
+    padding: 0 10px;
+    font-weight: 600
+   
+}
+.nobat-box .nobat{
+    padding: 0 15px;
+    display: flex;
+    align-items: center
+   
+}
+.nobat-box .nobat i{
+    padding: 0 15px;
+    display: flex;
+    font-size: 50px !important;
+
+   
+}
+.nobat-box .nobat .number {
+    border-right: 1px solid white;
+    padding: 0 15px;
+    
+   
+}
+.nobat-box .nobat .number span{
+   font-size: 20px;
+    
+   
+}
+
+/****************         big nobat now     *********************/
+.leftBox .nobat-box{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: white;
+    /* background: linear-gradient(to right, #dc007a  , #dc3545 ), url('../assets/76.jpg'); */
+    background: linear-gradient(to right,  #007bffdc , #17a3b8d7 ), url('../assets/7096.jpg');
+    background-size: contain;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.493);
+    
+}
+.leftBox .nobat-box .info{
+    display: flex;
+    flex-direction: column;
+    font-size: 26px
+   
+}
+.leftBox .nobat-box .info .doctor{
+    background: #ffffff3a;
+    border-radius: 60px;
+    padding: 1px 15px;
+   display: flex;
+   align-items: center;
+}
+.leftBox .nobat-box .info i{
+    font-size: 36px;
+    padding-left:5px
+}
+.leftBox .nobat-box .info small{
+    padding: 0px 15px;
+   
+}
+.nobat-box .info .number{
+    padding: 0 10px;
+    font-weight: 600;
+
+   
+}
+.leftBox .nobat-box .nobat{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+   
+}
+.leftBox .nobat-box .nobat i{
+    padding: 0 25px;
+    display: flex;
+    font-size: 54px !important;
+    
+
+   
+}
+.leftBox .nobat-box .nobat .number {
+    border-right:none;
+   
+    font-size: 52px;
+    
+   
+}
+.leftBox .nobat-box .nobat .number h2 {
+    font-size: 72px;
+    /* padding: 0 25px; */
+    /* border-right: 1px solid white; */
+    width: 190px;
+    height: 190px;
+    box-shadow: 0 0 17px rgba(0,0,0,0.4);
+    color: #f74c5d;
+    text-shadow: 0 0px 2px rgba(0,0,0,0.4);
+    display: flex;
+    background: #f8f9faf5;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    
+   
+}
+.leftBox .nobat-box .nobat .number span{
+   font-size: 42px;
+    
+   
+}
+
+.ofoqi{
+    display: flex;
+    font-size: 28px;
+    text-align: right;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    width: 100%;
+    
+}
+.ofoqi i{
+    padding-left: 15px
+}
+
+
+
+/******************       footer    *********************/
+.footer{
+    background: #6900f5;
+    border: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    color: white;
+    background-image: linear-gradient(to right, #007bff , #17a2b8);
+    box-shadow: 0 0 5px rgba(27, 30, 207, 0.493)
+}
+.footer ul{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.footer li{
+    
+    border-left: 1px solid gainsboro;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    padding: 10px 10px;
+}
+.footer li span{
+    padding: 0px 10px
+}
+.footer li i{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    background: #f8f9fa49;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+}
+.room-number{
+    border: 1px solid blueviolet;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 0 17px rgba(0,0,0,0.4);
+    color:#6900f5;
+    text-shadow: 0 0px 2px rgba(0,0,0,0.4);
+    display: flex;
+    background: #f8f9faf5;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+}

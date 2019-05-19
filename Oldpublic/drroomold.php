@@ -1,0 +1,147 @@
+<?php
+if(isset($_POST["submit"])){
+    setcookie('room',$_POST['room'],time() + (10 * 365 * 24 * 60 * 60));
+    header('Location: drroom.php');
+}
+?>
+<html>
+<body>
+<form action="drroom.php" method="post">
+<select id="room" name="room">
+    <option value="1" <?php if($_COOKIE['room']==1) echo "selected"?> >اتاق1</option>
+    <option value="2" <?php if($_COOKIE['room']==2) echo "selected"?> >اتاق 2</option>
+</select>
+    <input type="submit" name="submit" value="ذخیره">
+    </form>
+<h1 id="queue"></h1>
+<h2 id="notice"></h2>
+<button id="nextButton">next</button>
+<button id="drLeft">LEFT</button>
+</body>
+</html>
+<script src="assets/jquery-3.3.1.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/drroom.js"></script>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>بیمارستان امدای ابهر</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style/flaticon.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style/style.css" />
+</head>
+<body>
+<div class="container-fluid bg">
+    <div class="row">
+        <div class="col-md-12 ">
+            <div class="box">
+                <div class="header">
+                    <h4>بیمارستان امدادی ابهر</h4>
+                    <h2> 15:30 <i class="flaticon-clock"></i>
+                    </h2>
+                </div>
+                <div class="container body">
+                    <div class="row">
+                        <div class="col-md-5 rightBox">
+                            <div class="queue-box nobat-box">
+                                <div class="info">
+                                    <span class="doctor"> <i class="flaticon-doctor"></i> دکتر   </span>
+                                    <small>اتاق شماره  <span class="number">0</span></small>
+
+
+                                </div>
+                                <div class="nobat">
+                                    <i class="flaticon-user"></i>
+                                    <div class="number">
+                                        <span>نوبت</span>
+                                        <h2 class="queue">0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="queue-box nobat-box">
+                                <div class="info">
+                                    <span class="doctor"> <i class="flaticon-doctor"></i> دکتر </span>
+                                    <small>اتاق شماره  <span class="number">0</span></small>
+
+
+                                </div>
+                                <div class="nobat">
+                                    <i class="flaticon-user"></i>
+                                    <div class="number">
+                                        <span>نوبت</span>
+                                        <h2 class="queue">0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="queue-box nobat-box">
+                                <div class="info">
+                                    <span class="doctor"> <i class="flaticon-doctor"></i> دکتر   </span>
+                                    <small>اتاق شماره  <span class="number">0</span></small>
+
+
+                                </div>
+                                <div class="nobat">
+                                    <i class="flaticon-user"></i>
+                                    <div class="number">
+                                        <span>نوبت</span>
+                                        <h2 class="queue">0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 leftBox">
+                            <div class="nobat-box" id="big-queue">
+
+                                <div class="info">
+                                    <small>پزشک معالج</small>
+                                    <span class="doctor"> <i class="flaticon-doctor"></i> <span class="dr-name"> دکتر </span> </span>
+
+                                </div>
+                                <div class="nobat">
+                                    <h3>مراجعه به اتاق  </h3>
+                                    <span class="number room">0</span>
+                                </div>
+                                <div class="nobat">
+
+                                    <div class="number">
+
+                                        <h2 class="queue">0</h2>
+                                    </div>
+                                </div>
+                                <div class=" ofoqi">
+                                    <i class="flaticon-alarm"></i>
+                                    <span>  نوبت شماره :</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 footer">
+                            <ul>
+                                <li>
+                                    <i class="flaticon-doctor-stethoscope"></i>
+                                    <span> دکتر   </span>
+                                    <span> اتاق
+                                        </span>
+                                    <span class="room-number">0</span>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="assets/jquery-3.3.1.min.js"></script>
